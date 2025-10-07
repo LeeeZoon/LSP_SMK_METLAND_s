@@ -1,0 +1,386 @@
+#navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; 
+    background: transparent; 
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background_home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+#font_navbar a {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 700;
+    color: white; 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
+
+.hero-text {
+    color: white;
+    text-shadow: 0 2px 4px rgb(99, 99, 99);
+    text-align: left;
+    margin-right: 650px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; 
+}   
+    
+.judul-atas {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}   
+    
+.judul-bawah {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}   
+    
+/* Kompetensi Section */
+
+.kompetensi-section {
+    background-color: #00122c;
+    color: white;
+    padding: 100px 0;
+    font-family: "Montserrat", sans-serif;
+}   
+    
+.container-kompetensi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}   
+    
+.kompetensi-text {
+    flex: 1;
+    min-width: 300px;
+}   
+    
+.kompetensi-text h2 {
+    color: rgb(255, 215, 55);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}   
+    
+.kompetensi-text p {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 1.6;
+}   
+    
+.kompetensi-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}   
+    
+.kompetensi-card {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    background: white;
+    color: #000000;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}   
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.6;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}    
+
+.kompetensi-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}   
+    
+.kompetensi-card h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}   
+    
+.kompetensi-card p {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+}   
+    
+    
+.kompetensi-card:hover {
+    background-color: rgb(255, 215, 55);
+    transform: translateY(-5px);
+}   
+    /* Fasilitas Section */
+
+.fasilitas-section {
+    background-color: #ffffff;
+    color: #000;
+    padding: 100px 50px;
+    font-family: "Montserrat", sans-serif;
+}   
+
+.fasilitas-section h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+}   
+
+.container-fasilitas {
+    max-width: 1200px;
+    margin: 0 auto;
+}   
+
+.fasilitas-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}   
+
+.fasilitas-list ul {
+    flex: 1;
+    font-weight: 500;
+    min-width: 250px;
+    list-style: none;
+    padding-left: 20px;
+    line-height: 1.8;
+}    
+
+.fasilitas-list ul li {
+    color: #000000;
+}
+
+.fasilitas-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.fasilitas-gallery img {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.fasilitas-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+    /* Sertifikasi Section */
+
+.sertifikasi-section {
+    background-color: #00122c;
+    color: white;
+    padding: 100px 50px;
+    font-family: "Montserrat", sans-serif;
+}   
+
+.sertifikasi-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffc107; 
+    margin-bottom: 60px;
+}
+
+.container-sertifikasi {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}   
+
+.sertifikasi-item {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}   
+
+.sertifikasi-item.reverse {
+    flex-direction: row-reverse;
+}   
+
+.sertifikasi-text {
+    flex: 1;
+    min-width: 320px;
+}   
+
+.sertifikasi-text h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}   
+
+.sertifikasi-text ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.sertifikasi-img {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.sertifikasi-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #081122;
+  color: #fff;
+  padding: 50px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.footer-left h3 {
+  color: #f8c300;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.footer-left p {
+  margin: 4px 0;
+  color: #d3d3d3;
+}
+
+.footer-menu {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-menu h4,
+.footer-social h4 {
+  color: #f8c300;
+  margin-bottom: 12px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin: 8px 0;
+}
+
+.footer-menu ul li a {
+  color: #d3d3d3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+  color: #f8c300;
+}
+
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 22px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f8c300;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  color: #bbb;
+  font-size: 14px;
+}
