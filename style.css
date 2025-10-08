@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 86vh;
+    min-height: 106vh;
     display: flex;
     align-items: center;
     position: relative; 
@@ -25,7 +25,10 @@
     color: white; 
     text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
 }
-
+p {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 600;
+}
 .hero-text {
     color: white;
     text-shadow: 0 2px 4px rgb(99, 99, 99);
