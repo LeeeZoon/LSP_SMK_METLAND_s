@@ -176,16 +176,11 @@ p {
     margin-bottom: 60px;
 }   
 
-.fasilitas-list ul {
-    flex: 1;
-    font-weight: 500;
-    min-width: 250px;
-    list-style: none;
-    padding-left: 20px;
-    line-height: 1.8;
-}    
+.fasilitas-list p {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
 
-.fasilitas-list ul li {
+.fasilitas-list p {
     color: #000000;
 }
 
