@@ -73,19 +73,15 @@ p {
     gap: 40px;
 }   
     
-.kompetensi-text {
-    flex: 1;
-    min-width: 300px;
-}   
     
-.kompetensi-text h2 {
+.kompetensi-header h2 {
     color: rgb(255, 215, 55);
     font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }   
     
-.kompetensi-text p {
+.kompetensi-header p {
     color: rgb(255, 255, 255);
     font-weight: 500;
     line-height: 1.6;
@@ -94,7 +90,7 @@ p {
 .kompetensi-grid {
     flex: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px;
 }   
     
@@ -246,6 +242,7 @@ p {
 }
 
 .sertifikasi-item {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
