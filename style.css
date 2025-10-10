@@ -216,7 +216,7 @@ p {
 /* Data Asesor Section */
 
 .container-asesor {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 80px 20px;
     background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
