@@ -41,10 +41,14 @@ body::-webkit-scrollbar {
     z-index: 10; 
     background: transparent; 
 }
-
+#logo-hero{
+    background-image: linear-gradient(rgb(68, 72, 136), rgb(28, 110, 54)),url('assets/logo/Logo-LSP-SMK-Metland.png');
+    border-radius: 30px;
+    
+}
 .hero-section {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/background_home.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.605)), url('assets/img/background_home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
