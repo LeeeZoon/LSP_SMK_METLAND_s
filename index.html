@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <link rel="shortcut icon" href="Logo_Metland_School.png" type="image x-icon">
+  <link rel="shortcut icon" href="assets/logo/Logo_Metland_School.png" type="image x-icon">
 </head>
 
 <body>
@@ -20,15 +20,15 @@
   
   <div class="navbar fixed-top" id="navbar">
     <div class="container">
-      <img src="Logo_Metland_School.png" alt="logo nya" width="75" />
+      <img src="assets/logo/Logo_Metland_School.png" alt="logo nya" width="75" />
       <div class="d-flex" id="font_navbar">
         <div class="menu">
-          <a href="#home" class="p-4 text-decoration-none text-white">Home</a>
-          <a href="#profile" class="p-4 text-decoration-none text-white">Profile</a>
-          <a href="#kompetensi" class="p-4 text-decoration-none text-white">Skema</a>
-          <a href="#fasilitas" class="p-4 text-decoration-none text-white">Fasilitas</a>
-          <a href="#asesor" class="p-4 text-decoration-none text-white">Asesor</a>
-          <a href="#kontak" class="p-4 text-decoration-none text-white">Kontak</a>
+          <a href="#home" class="p-4 text-decoration-none text-white navbar-menu">Home</a>
+          <a href="#profile" class="p-4 text-decoration-none text-white navbar-menu">Profile</a>
+          <a href="#kompetensi" class="p-4 text-decoration-none text-white navbar-menu">Skema</a>
+          <a href="#fasilitas" class="p-4 text-decoration-none text-white navbar-menu">Fasilitas</a>
+          <a href="#asesor" class="p-4 text-decoration-none text-white navbar-menu">Asesor</a>
+          <a href="#kontak" class="p-4 text-decoration-none text-white navbar-menu">Kontak</a>
         </div>
       </div>
     </div>
@@ -39,15 +39,17 @@
   <section class="hero-section" id="home">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-7">
           <div class="col-10 hero-text">
             <p class="judul-atas">LEMBAGA SERTIFIKASI PROFESI (LSP) P1</p>
             <p class="judul-bawah">SMK METLAND SCHOOL</p>
           </div>
         </div>
+        <div class="col-5">
+          <img src="assets/logo/Logo-LSP-SMK-Metland.png" alt="" width="300" class="lsp-hero">
+        </div>
       </div>
     </div>
-    <img src="mouse.jpeg" alt="" width="100" height="100">
   </section>
 
   <!--PROFILE LSP SECTION-->
@@ -81,9 +83,9 @@
       </div>
       <div class="col-6">
         <div class="fotosertif" style="margin-top: 40px;">
-          <img src="bnsp.webp" alt="" width="120" class="me-4" />
-          <img src="iso9001sertif.jpeg" alt="" width="90" class="me-4" />
-          <img src="Logo-LSP-SMK-Metland.png" alt="" width="150" class="me-4" />
+          <img src="assets/img/bnsp.webp" alt="" width="120" class="me-4" />
+          <img src="assets/img/iso9001sertif.jpeg" alt="" width="90" class="me-4" />
+          <img src="assets/logo/Logo-LSP-SMK-Metland.png" alt="" width="150" class="me-4" />
         </div>
         <p style="margin-top: 70px; text-align: justify; margin-bottom: 80px;">
           SMK Metland berdiri pada 1 April 2014, oleh Yayasan Pendidikan
@@ -119,45 +121,51 @@
 
         <div class="kompetensi-grid">
           <div class="kompetensi-card">
-            <img src="PPLG.png" alt="" />
-            <h3>Pemrograman pemula</h3>
-            <p style="text-align: justify;">skema disusun oleh Komite Skema Badan Nasional Sertifikasi Profesi bersama Direktorat Kemitraan dan 
-              Penyelarasan Dunia Usaha dan Dunia Industri.</p>
+            <img src="assets/img/PPLG.png" alt="" />
+            <h3>Junior Programmer</h3>
+            <p style="text-align: justify;" class="desc-skema">Skema sertifikasi Junior Programmer ditujukan untuk mengukur
+               kompetensi peserta dalam melaksanakan pekerjaan dasar pemrograman komputer. Ruang lingkup kompetensi meliputi
+                pembuatan algoritma, penulisan kode program, pengujian, serta pemeliharaan aplikasi sederhana sesuai dengan
+                 standar industri dan prinsip pemrograman yang baik.</p>
           </div>
           <div class="kompetensi-card">
-            <img src="Akuntansi.jpg" alt="" />
-            <h3>Akuntansi</h3>
-            <p style="text-align: justify;">Kompetensi keahlian akuntansi di SMK Metland meliputi pembelajaran Akuntansi
-              Manual dan Akutansi Komputer
-              (MYOB). Kompetensi Keahlian Akuntansi di SMK Metland bertujuan agar siswa dapat mengetahui
-              Akuntansi baik untuk perusahaan jasa, perusahaan dagang, perusahaan manufaktur dan perhotelan</p>
+            <img src="assets/img/Akuntansi.jpg" alt="" />
+            <h3>Content Creator Junior</h3>
+            <p style="text-align: justify;" class="desc-skema">
+             Skema sertifikasi Content Creator Junior bertujuan untuk menguji kemampuan peserta dalam merencanakan, memproduksi, dan menyunting konten digital kreatif untuk berbagai media publikasi. Kompetensi ini mencakup penguasaan dasar produksi foto, video, dan desain grafis dengan memperhatikan nilai estetika, orisinalitas, serta etika komunikasi digital.
+            </p>
           </div>
 
           <div class="kompetensi-card">
-            <img src="Perhotelan.jpeg" alt="" />
-            <h3>Perhotelan</h3>
-            <p style="text-align: justify;">SMK Metland memiliki tugas melaksanakan pengembangan karakter dan mutu
-              pendidikan masyarakat salah
-              satunya dengan Program Pendidikan Perhotelan yang bertujuan melatih langsung tentang tanggung jawab
-              praktek bidang Perhotelan secara profesional.</p>
+            <img src="assets/img/Perhotelan.jpeg" alt="" />
+            <h3>Guest Service Agent</h3>
+            <p style="text-align: justify;" class="desc-skema">Skema sertifikasi Guest Service Agent disusun untuk mengukur kompetensi peserta dalam melaksanakan tugas pelayanan tamu di bagian front office hotel. Kompetensi mencakup penanganan reservasi, proses check-in dan check-out, serta pemberian informasi dan layanan kepada tamu sesuai dengan standar operasional industri perhotelan.</p>
           </div>
+          <div class="kompetensi-card">
+            <img src="assets/img/Perhotelan.jpeg" alt="" />
+            <h3>Room Attemdant</h3>
+            <p style="text-align: justify;" class="desc-skema">Skema sertifikasi Room Attendant bertujuan untuk menguji kemampuan peserta dalam melaksanakan kegiatan pembersihan dan penataan kamar tamu di lingkungan hotel. Peserta diharapkan mampu menerapkan standar kebersihan, ketertiban, dan keselamatan kerja sesuai dengan prosedur industri hospitality.</p>
+          </div>
+        </div>
+        <div class="grid-bawah">
 
           <div class="kompetensi-card">
-            <img src="Kuliner.jpeg" alt="" />
-            <h3>Kuliner</h3>
-            <p style="text-align: justify;">Jasa Boga adalah Kompetensi Keahlian yang berada di bawah Program Studi
-              Keahlian Tata Boga, Bidang Studi
-              Keahlian Pariwisata. Kompetensi Keahlian Jasa Boga memberikan pengetahuan dan keterampilan kepada peserta
-              didik di bidang pengolahan, penyajian dan pelayanan makanan dan minuman.</p>
-          </div>
+            <img src="assets/img/Perhotelan.jpeg" alt="" />
+          <h3>Waiter Server</h3>
+          <p style="text-align: justify;" class="desc-skema">Skema sertifikasi Waiter Server mengukur kompetensi peserta dalam memberikan layanan makanan dan minuman kepada tamu di restoran atau tempat makan. Ruang lingkup kompetensi mencakup persiapan area layanan, penyajian makanan dan minuman, serta penerapan standar pelayanan prima dan etika profesi.</p>
+        </div>
 
-          <div class="kompetensi-card">
-            <img src="DKV.jpg" alt="" />
-            <h3>Desain Komunikasi Visual</h3>
-            <p style="text-align: justify;">Desain Komunikasi Visual mempelajari ruang lingkup dan unsur-unsur desain,
-              tata letak elemen visual, serta jenis dan karakter media berdasarkan penempatan (indoor/outdoor) dan
-              bentuk (2D), termasuk prosedur pembuatan media dua dimensi.</p>
-          </div>
+        <div class="kompetensi-card">
+          <img src="assets/img/Kuliner.jpeg" alt="" />
+          <h3>Commis Chef</h3>
+          <p style="text-align: justify;" class="desc-skema">Skema sertifikasi Commis Chef ditujukan untuk menilai kemampuan peserta dalam melaksanakan kegiatan dasar pengolahan makanan di dapur profesional. Kompetensi meliputi persiapan bahan makanan, teknik memasak dasar, penyajian hidangan, serta penerapan kebersihan dan keselamatan kerja di lingkungan dapur.</p>
+        </div>
+
+        <div class="kompetensi-card">
+          <img src="assets/img/DKV.jpg" alt="" />
+          <h3>Junior Operator Desain Grafis</h3>
+          <p style="text-align: justify;" class="desc-skema">Skema sertifikasi Junior Operator Desain Grafis bertujuan untuk mengukur kemampuan peserta dalam mengoperasikan perangkat lunak desain grafis serta menghasilkan karya visual sesuai kebutuhan komunikasi dan publikasi. Kompetensi mencakup pembuatan desain berbasis komputer, pengaturan elemen visual, dan penerapan prinsip estetika desain.</p>
+        </div>
         </div>
       </div>
     </section>
@@ -183,14 +191,14 @@
 
       <div class="scroll">
         <div class="fasilitas-gallery">
-          <img src="Lab_IT.png" alt="" height="200">
-          <img src="Lab_kom.jpeg" alt="" height="200">
-          <img src="LAB_MM.jpg" alt="" height="200">
-          <img src="Ruangan hotel.png" alt="" height="200">
-          <img src="Kitchen.jpeg" alt="" height="200">
-          <img src="Aula.jpeg" alt="" height="200">
-          <img src="ABS.jpg" alt="" height="200">
-          <img src="Taman gcp.jpg" alt="" height="200">
+          <img src="assets/img/Lab_IT.png" alt="" height="200">
+          <img src="assets/img/Lab_kom.jpeg" alt="" height="200">
+          <img src="assets/img/LAB_MM.jpg" alt="" height="200">
+          <img src="assets/img/Ruangan hotel.png" alt="" height="200">
+          <img src="assets/img/Kitchen.jpeg" alt="" height="200">
+          <img src="assets/img/Aula.jpeg" alt="" height="200">
+          <img src="assets/img/ABS.jpg" alt="" height="200">
+          <img src="assets/img/Taman gcp.jpg" alt="" height="200">
         </div>
       </div>
   </section>
@@ -608,7 +616,7 @@
           </ul>
         </div>
         <div class="sertifikasi-img">
-          <img src="dummy.jpeg" alt="manfaat sertifikasi" />
+          <img src="assets/img/dummy.jpeg" alt="manfaat sertifikasi" />
         </div>
       </div>
 
@@ -629,7 +637,7 @@
           </ul>
         </div>
         <div class="sertifikasi-img">
-          <img src="dummy.jpeg" alt="manfaat sertifikasi" />
+          <img src="assets/img/dummy.jpeg" alt="manfaat sertifikasi" />
         </div>
       </div>
 
@@ -650,7 +658,7 @@
           </ul>
         </div>
         <div class="sertifikasi-img">
-          <img src="dummy.jpeg" alt="manfaat sertifikasi" />
+          <img src="assets/img/dummy.jpeg" alt="manfaat sertifikasi" />
         </div>
       </div>
     </div>
@@ -662,11 +670,13 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-left">
-        <img src="Logo_Metland_School.png" alt="Logo LSP" class="footer-logo">
+        <img src="assets/logo/Logo_Metland_School.png" alt="Logo LSP" class="footer-logo">
         <h5>Lembaga Sertifikasi Profesi (LSP) P1<br>SMK Metland School</h5>
         <p>Jl. Contoh Alamat No. 25, Bekasi, Jawa Barat</p>
         <p><i class="fa-solid fa-phone"></i> 0857-1234-5678</p>
         <p><i class="fa-solid fa-envelope"></i> lsp@metland.sch.id</p>
+        <a href="">Rehan</a><br>
+        <a href="">Sutan</a>
       </div>
 
       <div class="footer-menu">
@@ -683,36 +693,30 @@
       <div class="footer-social">
         <h5>Ikuti Kami</h5>
         <div class="social-icons">
-          <a href="https://www.instagram.com/smkmetland/"> <img src="instagram-logo.png" alt="instagram" width="35">
-            <a href="https://id-id.facebook.com/SMKMetland/"> <img src="facebook-logo.png" alt="facebook" width="38">
-              <a href="https://id-id.facebook.com/SMKMetland/"> <img src="youtube-logo.png" alt="youtube" width="40">
-                <a href="https://www.tiktok.com/@smkmetland"> <img src="tiktok-logo.png" alt="tiktok" width="40">
+          <a href="https://www.instagram.com/smkmetland/"> <img src="assets/img/instagram-logo.png" alt="instagram" width="35">
+            <a href="https://id-id.facebook.com/SMKMetland/"> <img src="assets/img/facebook-logo.png" alt="facebook" width="38">
+              <a href="https://id-id.facebook.com/SMKMetland/"> <img src="assets/img/youtube-logo.png" alt="youtube" width="40">
+                <a href="https://www.tiktok.com/@smkmetland"> <img src="assets/img/tiktok-logo.png" alt="tiktok" width="40">
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>© Sutan & Rehan</p>
+      <p>©Metland School </p>
     </div>
   </footer>
 
+<script>
+    const navbar = document.getElementById("navbar");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) { // kalau scroll lebih dari 50px
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 

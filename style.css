@@ -7,6 +7,30 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
+    overflow-y:auto ;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;           /* sembunyikan scrollbar di Chrome/Safari/Opera */
+}
+
+.lsp-hero{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* bayangan */
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu:hover{
+    border-radius: 5%;
+    text-shadow: 3px 3px 20px rgba(0, 0, 101, 1) !important;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* muncul warna saat scroll */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);  /* efek bayangan */
+    backdrop-filter: blur(8px); /* efek kaca buram */
 }
 
 #navbar {
@@ -20,7 +44,7 @@ body {
 
 .hero-section {
     background-color: #f8f9fa;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background_home.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/background_home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,12 +129,31 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     width: 100%;
+    height:400px;
 }   
+.grid-bawah {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    height:400px;
+    margin-left: 100px;
+}   
+
+.desc-skema{
+    max-height: 11rem;
+    overflow: auto;
+    overflow-y:auto ;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
     
 .kompetensi-card {
+    justify-content: center;
     animation: appear 5s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+    max-width: 300px;
     background: white;
     color: #000000;
     border-radius: 15px;
@@ -119,7 +162,12 @@ p {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
     cursor: pointer;
-}   
+    max-height: 400px;
+}
+.kompetensi-card::-webkit-scrollbar {
+  display: none;         
+}
+
 
 @keyframes appear {
     from {
