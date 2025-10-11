@@ -17,11 +17,6 @@ body::-webkit-scrollbar {
   display: none;           /* sembunyikan scrollbar di Chrome/Safari/Opera */
 }
 
-.lsp-hero{
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* bayangan */
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
 .navbar-menu:hover{
     border-radius: 5%;
     text-shadow: 3px 3px 20px rgba(0, 0, 101, 1) !important;
@@ -41,6 +36,7 @@ body::-webkit-scrollbar {
     z-index: 10; 
     background: transparent; 
 }
+
 .hero-section {
     background-color: #f8f9fa;
     background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.605)), url('assets/img/background_home.jpg');
@@ -51,6 +47,11 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     position: relative; 
+}
+
+#text-hero-smk{
+    padding-bottom: 400px;
+    margin-right: 105px;
 }
 
 #font_navbar a {
@@ -489,7 +490,7 @@ p {
 .footer {
     background-color: #081122;
     color: #fff;
-    padding: 50px 10%;
+    padding: 30px 10%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -522,12 +523,19 @@ p {
 }
 
 .footer-menu {
+    margin-left: 90px;
+    margin-top:20px ;
     flex: 1;
-    min-width: 200px;
+    max-width: 300px;
+}
+
+.footer-social{
+    margin-top: 20px;
 }
 
 .footer-menu h4,
 .footer-social h4 {
+    margin-top:40px;
     color: #f8c300;
     margin-bottom: 12px;
 }
