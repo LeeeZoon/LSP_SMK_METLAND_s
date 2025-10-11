@@ -17,6 +17,8 @@ body::-webkit-scrollbar {
   display: none;           /* sembunyikan scrollbar di Chrome/Safari/Opera */
 }
 
+
+
 .navbar-menu:hover{
     border-radius: 5%;
     text-shadow: 3px 3px 20px rgba(0, 0, 101, 1) !important;
@@ -36,7 +38,6 @@ body::-webkit-scrollbar {
     z-index: 10; 
     background: transparent; 
 }
-
 .hero-section {
     background-color: #f8f9fa;
     background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.605)), url('assets/img/background_home.jpg');
@@ -47,11 +48,6 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     position: relative; 
-}
-
-#text-hero-smk{
-    padding-bottom: 400px;
-    margin-right: 105px;
 }
 
 #font_navbar a {
@@ -103,11 +99,13 @@ p {
 .container-kompetensi {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1400px;
     margin: auto;
-    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 60px 20px;
 }   
     
 .kompetensi-header h2 {
@@ -123,22 +121,6 @@ p {
     line-height: 1.6;
 }   
     
-.kompetensi-grid {
-    flex: 2;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-    width: 100%;
-    height:400px;
-}   
-.grid-bawah {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    width: 100%;
-    height:400px;
-    margin-left: 100px;
-}   
 
 .desc-skema{
     max-height: 11rem;
@@ -168,6 +150,17 @@ p {
   display: none;         
 }
 
+@media (max-width: 992px) {
+      .kompetensi-card {
+        width: 45%;
+      }
+    }
+
+@media (max-width: 600px) {
+      .kompetensi-card {
+        width: 100%;
+      }
+    }
 
 @keyframes appear {
     from {
@@ -268,6 +261,7 @@ p {
     margin: 0 auto;
     padding: 80px 20px;
     background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+
 }
 
 .header {
@@ -302,6 +296,9 @@ p {
     padding: 35px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .asesor-card:hover {
@@ -442,10 +439,6 @@ p {
     flex-wrap: wrap;
 }
 
-.sertifikasi-item.reverse {
-    flex-direction: row-reverse;
-}
-
 .sertifikasi-text {
     flex: 1;
     min-width: 320px;
@@ -471,11 +464,27 @@ p {
     display: flex;
     justify-content: center;
 }
+.sertifikasi-item.reverse{
+    flex-direction: row-reverse;
+}
+.maps{
+    margin: 20px;
+}
+
 
 .sertifikasi-img img {
     width: 100%;
-    max-width: 450px;
-    border-radius: 16px;
+    max-width: 550px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.sertifikasi-img iframe {
+    margin: 20px;
+    max-height: 350px;
+    max-width: 400px;
+    border-radius: 5px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -483,6 +492,29 @@ p {
 
 .sertifikasi-img img:hover {
     transform: scale(1.05);
+}
+
+.maps.reverse{
+    flex-direction: row-reverse;
+}
+.iframe-item {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.iframe-text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.iframe-text ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 1.8;
 }
 
 /* Footer */
@@ -622,4 +654,30 @@ p {
     .kompetensi-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.wa-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    background-color: #FCF9EA;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.wa-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.wa-button:hover {
+    transform: scale(1.1);
+    background-color: #ED1C24;
 }
